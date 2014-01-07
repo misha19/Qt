@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 
 #include <QFileDialog>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -91,4 +92,11 @@ void MainWindow::on_actionRedo_triggered()
 {
     //redo
     ui->textEdit->redo();
+}
+
+void MainWindow::on_action_triggered()
+{
+    QMessageBox::about(this, tr("About"),tr("<h2>Cross platform Text editor 1.0</h2>"
+                                            "<p> Licenced under GPL"
+                                            "<p> Developer : Mehran Barzegar Mishamandani"));
 }

@@ -36,6 +36,8 @@ private slots:
 
     void on_actionRedo_triggered();
 
+    void on_action_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString fileName01;
